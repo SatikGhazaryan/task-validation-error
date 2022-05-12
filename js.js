@@ -126,7 +126,8 @@ class SignupValidation {
   addLocalStorage(a, b) {
     if (a.length === 0 && b) {
       console.log("ok");
-      window.open("login.html");
+      //window.open("login.html");
+      document.getElementById("form").submit();
     }
   }
   main() {
