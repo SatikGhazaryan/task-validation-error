@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 420px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.inp {
+  width: 100%;
+}
+.row {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+.validation {
+  display: flex;
+}
+.validation div {
+  height: 15px;
+  background: #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: rgb(23, 111, 6);
+  color: #fff;
+  cursor: pointer;
+}
+.btn-0 {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(23, 111, 6);
+  color: rgb(23, 111, 6);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+}
+.btn:hover {
+  background: rgb(29, 134, 8);
+}
+.btn-0:hover {
+  background: rgb(29, 134, 8);
+  color: #fff;
+}
+
+.f-end {
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.d-none {
+  display: none;
+}
+.bg {
+  transition-duration: 1s;
+  background: rgb(23, 111, 6) !important;
+}
+.pas,
+.user {
+  margin: 10px 0;
+}
+.pas p,
+.user p,
+#error p {
+  font-size: 12px;
+  margin: 5px;
+  color: #f00;
+}
+.pas p::before,
+.user p::before,
+#error p::before {
+  content: "*";
+  margin: 5px;
+}
