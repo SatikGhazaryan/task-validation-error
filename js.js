@@ -125,19 +125,8 @@ class SignupValidation {
   }
   addLocalStorage(a, b) {
     if (a.length === 0 && b) {
-      const user = {
-        name: document.getElementById("name").value,
-        surname: document.getElementById("surname").value,
-        email: document.getElementById("gmail").value,
-        username: document.getElementById("username").value,
-        password: document.getElementById("pas").value,
-      };
-      localStorage["user"] = JSON.stringify(user);
-      setTimeout(function () {
-        alert(
-          "Your data has been successfully registered.Thank you for your trust"
-        );
-      }, 700);
+      console.log("ok");
+      window.open("login.html");
     }
   }
   main() {
@@ -155,7 +144,6 @@ class SignupValidation {
   }
 }
 
-debugger;
 document.getElementById("sub").addEventListener("click", function () {
   const signup = new SignupValidation();
   signup.main();
